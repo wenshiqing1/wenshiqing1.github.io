@@ -3,11 +3,11 @@
 	margin: 0px;
 	line-height: 20px;}
 body{height: 100%;
-	background-color: #f3fle9;
+	background-color:#f3f1e9;
 	position: relative;}
 img{border: 0px;}
 #wrapper{padding: 0 0 5px 0}
-#content_inside{background-image: url(../图片/实验四图片/beijing.jpg);
+#content_inside{
 				background-position: top left;
 				background-repeat: no-repeat;
 				width: 1000px;
