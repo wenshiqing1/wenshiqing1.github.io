@@ -4,13 +4,13 @@
   margin: 0px;
   line-height: 20px;}
 body{height: 100%;
-    background-color: #f3fle9;
+    background-color: #f3f1e9;
     position: relative;}
 img{border: 0px;}
 #mian_block{font-family: Arial,Helvetica,sana-serif;
             font-size: 12px;
             color: #464646;
-            overflow: hidden；
+            overflow: hidden;
             float:left;
 			width: 752px;}
 .content_mian{width: 720px;
