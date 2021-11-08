@@ -6,9 +6,9 @@
 <style>
 	.box{background-color:#BDBDBD;
 	    width: 700px;
-		height: 950px;
+		height: 900px;
 		text-align:left;
-		border: 2px black solid}
+		border: 2px black solid;}
 	.header{border: 2px #F7FE2E solid;
 			width: 600px;
 			height: 200px;
@@ -34,16 +34,19 @@
 			border: 3px black solid;
 			text-align: center;
 			padding: 10px;
-			margin-left: 300px;
-			margin-top: 20px;}
+			margin-right: 50px;
+			margin-top: 20px;
+			float: right}
 	#menu{width: 520px;
 		height: 30px;
 		background-color: #088A08;
 		border: 3px black solid;
 		padding: 10px;
 		text-align: left;
-		margin-top:30px;
-		margin-left: 30PX;}
+		margin-top:110px;
+		margin-left: 30PX;
+		color: white;
+		float: none;}
 	.main{width: 600px;
 		height: 500px;
 		background-color:#088A4B; 
@@ -52,12 +55,15 @@
 		border: 3px #F7FE2E solid;
 		padding: 5px;
 		margin: 30px auto;}
-	#sidebar{width: 100px;
+	p{
+		margin: 0px;
+	}
+	#sidebar{width: 200px;
 			height: 400px;
 			background-color: blue;
 			color: white;
 			border: 3px white solid;
-			margin-top: 50px;
+			margin-top: 10px;
 			margin-left: 10px;
 			text-align: center;
 			padding: 10px;
@@ -66,34 +72,36 @@
 			height: 400px;
 			background-color: #2ECCFA;
 			border: 3px white solid;
-			margin-top:30px;
-			margin-left: 200px;
+			margin-top:10px;
+			margin-right: 10px;
 			text-align: left;
-			padding: 10px;}
+			padding: 10px;
+			float: right}
 	.footer{width: 600px;
-			height: 40px;
+			height: 30px;
 			background-color: red;
 			border: 3px #F7FE2E solid;
-			margin-left: 40px;
+			margin: 20px auto;
 			color: white;
 			text-align: left;
 			padding: 10px;}
+	
 
 </style>
 </head>
 
 <body>
-	<div class="box">div->box 包含下面3部分结构div(header,main,footer),布局网页宽度和居中
-		<div class="header">div->header 包含下面3个结构div 布局头部高度和主要背景
+	<div class="box"><p>div->box 包含下面3部分结构div(header,main,footer),布局网页宽度和居中</p>
+		<div class="header"><p>div->header 包含下面3个结构div 布局头部高度和主要背景</p>
 			<div id="logo">div->id=logo</div>
 			<div id="banner">div->id=banner</div>
 			<div id="menu">div->id=menu</div>
 		</div>
-		<div class="main">div->main 包含下面2个div（sidebar,content）
+		<div class="main"><p>div->main 包含下面2个div（sidebar,content）</p>
 			<div id="sidebar">div->sidebar</div>
 			<div id="content">div->id=content</div>
 		</div>
-		<div class="footer">div->id=footer</div>
+		<div class="footer"><p>div->id=footer</p></div>
 	</div>
 
 	</body>

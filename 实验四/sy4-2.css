@@ -1,4 +1,4 @@
-7@charset "utf-8";
+@charset "utf-8";
 *{padding: 0px;
 	margin: 0px;
 	line-height: 20px;}
@@ -7,13 +7,11 @@ body{height: 100%;
 	position: relative;}
 img{border: 0px;}
 #wrapper{padding: 0 0 5px 0}
-#content_inside{
-				background-position: top left;
-				background-repeat: no-repeat;
+#content_inside{background-color:#f3f1e9 ;
 				width: 1000px;
 				margin: 0 auto;
 				overflow: hidden;}
-#main_block{font-family: Arial,Helvetica,sana-serif;
+#main_block{font-family: 宋体;
 			font-size: 12px;
 			color: #464646;
 			overflow: hidden;
@@ -22,7 +20,7 @@ img{border: 0px;}
 .pad20{padding: 0 0 20px 0}
 #item{padding: 13px 0 0 5px;
 	  float: left;}
-#item h4{font-family: Arial,Helvetica,sana-serif;
+#item h4{font-family: 宋体;
 		font-size: 24px;
 		color: #242424;
 		font-weight: normal;}
@@ -54,12 +52,10 @@ img{border: 0px;}
 	float: left;
 	line-height: 18px;
 	margin: 3px 3px 0 0;
-	width: 60px;
+	width: 41px;
 	text-align: center;
-	background-image: url(../图片/实验四图片/collect.jpg);
-	backgroud-position:top left;
-	background-repeat: no-repeat;
-	color: red;
+	background-color: green;
+	color: #fff;
 	text-decoration: none;}
 .buy{display:block;
 	float:left;
@@ -67,8 +63,6 @@ img{border: 0px;}
 	margin: 3px 3px 0 0;
 	width: 92px;
 	text-align:center;
-	background-image: url(../图片/实验四图片/buy.jpg);
-	background-position: top left;
-	background-repeat: no-repeat;
+	background-color: black;
 	color: #CAFF34;
 	text-decoration: none;}
