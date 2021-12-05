@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>文诗晴 01</title>
+<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+<link href="css/component.css" rel="stylesheet" type="text/css"  />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Scootio Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola Welcome" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--web-fonts-->
+<link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700' rel='stylesheet' type='text/css'>
+<!--js-->
+<script src="js/jquery-1.11.1.min.js"></script> 
+<script src="js/modernizr.custom.js"></script>
+<link href="css/swipebox.css" rel='stylesheet' type='text/css' />
+<!--//js-->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<!--/script-->
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
+				});
+			});
+</script>
+<script src="js/jquery.swipebox.min.js"></script> 
+					<script type="text/javascript">
+						jQuery(function($) {
+							$(".work-grid-middle a").swipebox();
+						});
+					</script>
+
+
+</head>
+  <!--start-home-->
+ <body class="cbp-spmenu-push">
+       <!--top-header-->
+		<!--bottom-->
+		  <section class="button">
+					<button id="showLeftPush"><img src="images/menu-icon.png" alt=""></button>
+		   </section>
+		   	<!-- start-search-->
+			  <div class="search">
+			   <div id="sb-search" class="sb-search">
+				  <form>
+					 <input class="sb-search-input" placeholder="输入您的关键词" type="search" id="search">
+					 <input class="sb-search-submit" type="submit" value="">
+					 <span class="sb-icon-search"> </span>
+				  </form>
+			    </div>
+			   </div>
+			 <!--search-scripts-->
+			 <script src="js/classie.js"></script>
+			 <script src="js/uisearch.js"></script>
+			   <script>
+				 new UISearch( document.getElementById( 'sb-search' ) );
+			   </script>
+				<!--//search-scripts-->
+
+			<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+			<h3>导航</h3>
+				<a class="active scroll" href="#house">首页</a>
+				<a class="scroll" href="#about">关于</a>
+				<a class="scroll" href="#service">专辑</a>
+				<a class="scroll" href="#news">演唱风格</a>
+			    <a class="scroll" href="#demo">关于作者</a>
+				<a class="scroll" href="#contact">在线留言</a>
+				<ul class=" side-icons">
+							<li><a class="fb" href="#"></a></li>
+							<li><a class="twitt" href="#"></a></li>
+							<li><a class="goog" href="#"></a></li>
+							<li><a class="drib" href="#"></a></li>
+					   </ul>
+		  </nav>
+	      <div class="banner" id="house">
+		       <div class="container">
+						<div class="callbacks_container">
+						<ul class="rslides callbacks callbacks1" id="slider4">
+							<li class="callbacks1_on" style="display: block; float: left; position: relative; opacity: 1; z-index: 2; transition: opacity 500ms ease-in-out;">
+								<div class="banner-info">
+								<h3>Singer</h3>
+							  
+								</div>
+							</li>
+							<li class="" style="display: block; float: none; position: absolute; opacity: 0; z-index: 1; transition: opacity 500ms ease-in-out;">
+								<div class="banner-info">
+								   <h3>music producer</h3>
+								
+								</div>
+							</li>
+							<li class="" style="display: block; float: none; position: absolute; opacity: 0; z-index: 1; transition: opacity 500ms ease-in-out;">
+								<div class="banner-info">
+								  <h3>actor</h3>
+								 
+								</div>	
+							</li>
+							<li class="callbacks1_on" style="display: block; float: left; position: relative; opacity: 1; z-index: 2; transition: opacity 500ms ease-in-out;">
+								<div class="banner-info">
+								 <h3>Forever & Always</h3>
+								
+								</div>
+							</li>
+						</ul>
+						</div>
+						<!--banner-Slider-->
+						<script src="js/responsiveslides.min.js"></script>
+						 <script>
+						// You can also use "$(window).load(function() {"
+						$(function () {
+						  // Slideshow 4
+						  $("#slider4").responsiveSlides({
+						auto: true,
+						pager: true,
+						nav:false,
+						speed: 500,
+						namespace: "callbacks",
+						before: function () {
+						  $('.events').append("<li>before event fired.</li>");
+						},
+						after: function () {
+						  $('.events').append("<li>after event fired.</li>");
+						}
+						  });
+
+						});
+						  </script>
+				</div>
+
+
+		 </div>
+		<script>
+			var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+				showLeftPush = document.getElementById( 'showLeftPush' ),
+				showRightPush = document.getElementById( 'showRightPush' ),
+				body = document.body;
+
+			showLeftPush.onclick = function() {
+				classie.toggle( this, 'active' );
+				classie.toggle( body, 'cbp-spmenu-push-toright' );
+				classie.toggle( menuLeft, 'cbp-spmenu-open' );
+				disableOther( 'showLeftPush' );
+			};
+
+			function disableOther( button ) {
+				if( button !== 'showLeftPush' ) {
+					classie.toggle( showLeftPush, 'disabled' );
+				}
+				if( button !== 'showRightPush' ) {
+					classie.toggle( showRightPush, 'disabled' );
+				}
+			}
+		</script>
+        
+  <!--start-about-->
+     <div class="about-section" id="about">
+	    <div class="container">
+		       <h3 class="tittle">About</h3>
+		        <div class="about-top">
+				  <div class="col-md-6 about-text">
+				   <h2>泰勒·斯威夫特</h2>
+				  <p>泰勒·斯威夫特（Taylor Swift），1989年12月13日出生于美国宾夕法尼亚州，美国女歌手、词曲作者、音乐制作人、演员。</p>
+				  <p>2006年，发行个人首张音乐专辑《Taylor Swift》，该专辑获得美国唱片业协会认证5倍白金唱片销量。2008年，发行音乐专辑《Fearless》，该专辑在美国公告牌专辑榜上获11周冠军，认证7倍白金唱片销量，并获得第52届格莱美奖年度专辑奖 [1]  。2010年，发行音乐专辑《Speak Now》，单曲《Mean》获2座格莱美奖。同年，获创作人名人堂“哈尔·大卫星光大奖”</p>
+				   <a href="#" class="con two"><i class="glyphicon glyphicon-menu-right"></i>了解更多</a>
+		    </div>
+			<div class="col-md-6 about-pic">
+		            <video width="100%" height="100%" controls="controls"  poster="images/ab.jpg" >
+					<source src="images/video.mp4" type="video/mp4">
+					</video>
+		    </div>
+				<div class="clearfix"> </div>		
+		    </div>
+		</div>
+	 </div>
+  <!--//about-->
+  <!--start-services-->
+     <div class="service-section" id="service">
+	  
+		  <div class="top-places">
+		     <div class="container">
+			     <h3 class="tittle">专辑</h3>
+			    <div class="tip-main">
+			      <div class="col-md-4 top-grid">
+					 <img src="images/top-p.jpg" alt="image"/>
+					 <h4>Sad Girl Autumn Version</h4>
+					 <p>流派：POP流行 </p>
+					
+				  </div>		
+				    <div class="col-md-4 top-grid">
+					     <img src="images/top-p1.jpg" alt="image"/>
+					 	 <h4>All Too Well </h4>
+						  <p>流派：POP流行</p>
+						  
+				  </div>	
+				   <div class="col-md-4 top-grid">
+					    <img src="images/top-p2.jpg" alt="image"/>
+					 	<h4>Lover</h4>
+						<p>美国流行唱作天后Taylor Swift第7张录音室专辑 </p>
+						
+
+				  </div>	
+					<div class="clearfix"> </div>				
+				</div>
+			</div>
+	     </div>
+</div>
+  <!--//about-->
+  <!--team start here-->
+<!--news-starts-->
+	<div class="news" id="news">
+		<div class="container">
+		  <h3 class="tittle">演唱风格</h3>
+			<div class="news-bottom">
+				<div class="news-one">
+					<div class="col-md-6 news-left">
+						<a href="#"><img src="images/n1.jpg" alt="" /></a>
+					</div>	
+					<div class="col-md-6 news-right"> 
+					<a href="#"><h4>首张乡村音乐专辑</h4></a>
+						<h5>2006-2013</h5>
+						<p class="one">2006年，发行个人首张音乐专辑《Taylor Swift》，该专辑获得美国唱片业协会认证5倍白金唱片销量。2008年，发行音乐专《Fearless》，该专辑在美国公告牌专辑榜上获11周冠军，认证7倍白金唱片销量，并获得第52届格莱美奖年度专辑奖。2010年，发行音乐专辑《Speak Now》，单曲《Mean》获2座格莱美奖。同年，获创作人名人堂“哈尔·大卫星光大奖”。2011年，凭借三张实体专辑销量，获得中国区“五白金唱片”销量认证。2012年，开始向流行乐歌手转型，并发行音乐专辑《Red》，该专辑实体版本获得中国区“双白金唱片”销量认证。2013年，获得第47届乡村音乐协会奖巅峰奖。</p>
+						<p class="one">
+					</div>	
+					<div class="clearfix"> </div>	
+				</div>
+				<div class="news-one">
+					<div class="col-md-6 news-right"> 
+						<a href="#"><h4>首张流行音乐专辑</h4></a>
+						<h5>2014-2020</h5>
+						<p class="one">2014年，发行音乐专辑《1989》，该专辑获得第58届格莱美奖年度专辑奖，国际唱片业协会（IFPI）宣布该专辑为“年度全球唱片销量冠军”。同年，获得第42届全美音乐奖迪克·克拉克成就奖，并入围《时代周刊（美国版）》年度人物。2015年4月，获第50届乡村音乐学院奖50周年里程碑奖。2017年，发行音乐专辑《reputation》，凭借美国首周123.8万张销量，成为拥有四张首周百万销量专辑的歌手。同年，被《时代周刊》选为年度人物。2019年，发行音乐专辑《Lover》；同年，获得国际唱片业协会（IFPI）“年度全球最佳唱片艺术家奖”。2020年，发行音乐专辑《folklore》《evermore》，前者获第63届格莱美奖年度专辑奖。</p>	
+					</div>	
+					<div class="col-md-6 news-left">
+						<a href="#"><img src="images/n2.jpg" alt="" /></a>
+					</div>						
+					<div class="clearfix"> </div>	
+				</div>		
+			</div>			
+		</div>	
+	</div>	
+	<!--news-end-->
+
+	<!--test-demo-->
+	  <div class="test-demo" id="demo">	
+		      <div class="container">
+		       <h3 class="tittle">关于作者</h3>
+		        <div class="about-top">
+				  <div class="col-md-6 about-text">
+				  <h2>个人基本信息</h2>
+				  <table>
+					    <tr>
+                            <td>姓名：</td>
+                            <td>文诗晴</td>
+                        </tr>
+                        <tr>
+                            <td>性别：</td>
+                            <td>女</td>
+                        </tr>
+                        <tr>
+                            <td>专业：</td>
+                            <td>数据科学与大数据技术</td>
+                        </tr>
+					    <tr>
+							<td>学号：</td>
+							<td>2019041011000101</td>
+                        <tr>
+                            <td>电话：</td>
+                            <td>18979945742</td>
+                        </tr>
+                        <tr>
+                            <td>邮箱：</td>
+                            <td><a href="mailto:124137304@qq.com" style="text-decoration: none;color: #5cafa5;">124137304@qq.com</a></td>
+                        </tr>
+					   <tr>
+                            <td>现居地：</td>
+                            <td>江西省萍乡市</td>
+                        </tr>
+					  <tr>
+                            <td>爱好：</td>
+                            <td>音乐和电影</td>
+					  </tr>
+					  <tr>
+						  <td>喜欢的歌曲：</td>
+                    </table></br>
+<audio controls>
+  <source src="images/music.mp3" type="audio/mpeg">
+</audio>
+		    </div>
+			<div class="col-md-6 about-pic">
+		            <img src="images/ab01.jpg" alt=""/>
+		    </div>
+				<div class="clearfix"> </div>		
+		    </div>
+		</div>
+	   </div>
+
+   <div class="contact" id="contact">
+	 <div class="container">
+		       <h3 class="tittle">在线留言</h3>
+			<div class="contact-form">
+					<div class="col-md-6 contact-grid">
+					<form>
+						<p class="your-para">姓名:</p>
+						<input type="text" value="" onFocus="this.value='';" onBlur="if (this.value == '') {this.value ='';}">
+						<p class="your-para">邮箱:</p>
+						<input type="text" value="" onFocus="this.value='';" onBlur="if (this.value == '') {this.value ='';}">
+						<p class="your-para">留言:</p>
+						<textarea cols="77" rows="6" value=" " onFocus="this.value='';" onBlur="if (this.value == '') {this.value = '';}"></textarea>
+						<div class="send">
+							<input type="submit" value="提交" >
+						</div>
+					</form>
+				</div>
+				<div class="col-md-6 contact-in">
+					<h5> 联系信息</h5>
+					<p class="para1"></p>
+					<div class="more-address"> 
+						<div class="address-more">
+						  <p class="location"><i class="glyphicon glyphicon-map-marker"></i>江西省南昌市华东交通大学</p>
+					      <p class="phone"><i class="glyphicon glyphicon-phone"></i> 18979945742</p>
+					      <p class="mail"><i class="glyphicon glyphicon-envelope"></i><a href="mailto:1234567@qq.com">124137304@qq.com</a></p></be>
+						  <img src="images/1234.gif" width="300" height="200"/>
+						</div>
+				      </div>
+				</div>
+				<div class="clearfix"> </div>
+			   </div>
+	    </div>
+    </div>
+
+	<!--/footer-->
+			<div class="copy">
+		              <p>Copyright &copy; 2015. 泰勒·斯威夫特  </p>
+		            </div>
+							<!--start-smoth-scrolling-->
+						<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+								</script>
+		<a href="#house" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+</body>
+</html>
