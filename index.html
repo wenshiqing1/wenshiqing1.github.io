@@ -1,104 +1,209 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<title>文诗晴 01 网页实验</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
+	<head>
+		<meta charset="utf-8">
+		<title>01 文诗晴</title>
+		<style>
+			* {
+	padding: 0;
+	margin: 0;
 }
 
-body {
-  margin: 0;
+html body:before {
+	content: ' ';
+	position: fixed;
+	z-index: -1;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: url(图片/目录图片/back.gif) no-repeat;
+	background-size: cover;
 }
 
-/* 头部样式 */
-.header {
-  background-color: #f1f1f1;
-  padding: 20px;
-  text-align: center;
-  font-family: 宋体;
+#picList {
+	width: 750px;
+	height: 560px;
+	margin: 180px auto;
 }
 
-/* 导航条 */
-.topnav {
-  overflow: hidden;
-  background-color: #333;
+#picList span {
+	background-color: rgba(0, 0, 0, 0.3);
+	width: 239px;
+	height: 169px;
+	display: block;
+	float: left;
+	/* margin: 5px; */
+	font-size: 30px;
+	color: #fff;
+	text-align: center;
+	line-height: 169px;
+	font-family: 幼圆;
+	cursor: pointer;
 }
- 
-/* 导航链接 */
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
- 
-/* 链接 - 修改颜色 */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-p{color:black;
-  text-align: left;
-}
-</style>
-</head>
-<body>
 
-<div class="header">
-  <h1>网页制作与设计实验</h1>
-</div>
-	<p>实验一</p>
-<div class="topnav">
-  	<a href="实验一/sy1-1.html">sy1-1</a>
-	<a href="实验一/sy1-2.html">sy1-2</a>
-	<a href="实验一/sy1-3.html">sy1-3</a>
-	<a href="实验一/sy1-4.html">sy1-4</a>
-	<a href="实验一/sy1-5.html">sy1-5</a>
-	<a href="实验一/sy1-5-1.html">sy1-5-1</a>
-	<a href="实验一/sy1-6.html">sy1-6</a>
-</div>
-	<p>实验二</p>
-<div class="topnav">
-	<a href="实验二/sy2-1.html">sy2-1</a>
-	<a href="实验二/sy2-2.html">sy2-2</a>
-	<a href="实验二/sy2-3.html">sy2-3</a>
-</div>
-	<p>实验三</p>
-<div class="topnav">
-	<a href="实验三/sy3-1.htm">sy3-1</a>
-	<a href="实验三/sy3-2.css">sy3-2.css</a>
-	<a href="实验三/sy3-2.htm">sy3-2</a>
-	<a href="实验三/sy3-3.htm">sy3-3</a>
-	<a href="实验三/sy3-4.htm">sy3-4</a>
-	<a href="实验三/sy3-5.htm">sy3-5</a>
-	<a href="实验三/sy3-6.htm">sy3-6</a>
-</div>	
-	<p>实验四</p>
-<div class="topnav">
-	<a href="实验四/sy4-1.htm">sy4-1</a>
-	<a href="实验四/sy4-2.htm">sy4-2</a>
-	<a href="实验四/sy4-2.css">sy4-1.css</a>
-</div>	
-	<p>实验五</p>
-<div class="topnav">
-	<a href="实验五/sy5.html">sy5.html</a>
-</div>
-	<p>实验六</p>
-<div class="topnav">
-	<a href="实验六/sy6.html">sy6.html</a>
-</div>
-	<p>实验七</p>
-<div class="topnav">
-</div>	
-	<p>大作业</p>
-<div class="topnav">
-	<a href="大作业/dazuoye.html">sy8.html</a>
-</div>	
+.box-T {
+	float: left;
+	width: 239px;
+	height: 169px;
+	margin: 5px;
+	position: relative;
+	box-sizing: border-box;
+	-webkit-transition: all .4s ease-in-out;
+	-moz-transition: all .4s ease-in-out;
+	-o-transition: all .4s ease-in-out;
+	-ms-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
+	overflow: hidden;
+}
 
-</body>
+.box-T .box-T_img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	-webkit-transition: all .4s ease-in-out;
+	-moz-transition: all .4s ease-in-out;
+	-o-transition: all .4s ease-in-out;
+	-ms-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
+	opacity: 1;
+	overflow: hidden;
+}
+
+.box-T:hover .box-T_img {
+	position: absolute;
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+#pan {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.8);
+	display: none;
+}
+
+
+#showImage {
+	position: absolute;
+	left: 50%;
+	top: 218px;
+	z-index: 10;
+	box-shadow: 0px 0px 20px #fff;
+	margin-left: -329px;
+	width: 658px;
+	height: 458px;
+	background: #fff;
+	color: #333;
+	font-size: 30px;
+	padding: 20px;
+}
+
+#show {
+	display: none;
+}
+
+.dianji {
+	text-decoration: none;
+	display: block;
+	margin-top:20px;
+	font-size:16px;
+	color:#333;
+}
+
+		</style>
+	</head>
+	<body>
+		<div id="picList">
+			<div class="box-T">
+				<span style="text-shadow: #f00 3px 4px 5px;" class="box-T_img">实验一</span>
+			</div>
+			<div class="box-T">
+				<span style="text-shadow: #ff9900 3px 4px 5px;" class="box-T_img">实验二</span>
+			</div>
+			<div class="box-T">
+				<span style="text-shadow: #91e0b3 3px 4px 5px;" class="box-T_img">实验三</span>
+			</div>
+			<div class="box-T">
+				<span style="text-shadow: #ff9966 3px 4px 5px;" class="box-T_img">实验四</span>
+			</div>
+			<p style="background:none;box-shadow:none;width:239px;height:169px;float:left;margin:5px;"></p>
+			<div class="box-T">
+				<span style="text-shadow: #9999ff 3px 4px 5px;" class="box-T_img">实验五</span>
+			</div>
+			<div class="box-T">
+				<span style="text-shadow: #00cccc 3px 4px 5px;" class="box-T_img">实验六</span>
+			</div>
+			<div class="box-T">
+				<span style="text-shadow: #3366ff 3px 4px 5px;" class="box-T_img">实验七</span>
+			</div>
+			<div class="box-T">
+				<span style="text-shadow: #339999 3px 4px 5px;" class="box-T_img">实验八</span>
+			</div>
+		</div>
+		<div id="pan"></div>
+		<div id="show">
+			<div id="showImage">
+				<span class="title" style="text-shadow: #f00 1px 1px 3px;;"></span>
+				<div class="childTitle"></div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+	<script type="text/javascript">
+		var arr = [
+			["<a class='dianji' href='#'>sy1-1</a>", "<a class='dianji' href='#'>sy1-2</a>",
+				"<a class='dianji' href='#'>sy1-3</a>"
+			],
+			["<a class='dianji' href='#'>sy2-1</a>", "<a class='dianji' href='#'>sy2-2</a>",
+				"<a class='dianji' href='#'>sy2-3</a>"
+			],
+			["<a class='dianji' href='#'>sy3-1</a>", "<a class='dianji' href='#'>sy3-2</a>",
+				"<a class='dianji' href='#'>sy3-3</a>"
+			],
+			["<a class='dianji' href='#'>sy4-1</a>", "<a class='dianji' href='#'>sy4-2</a>",
+				"<a class='dianji' href='#'>sy4-3</a>"
+			],
+			["<a class='dianji' href='#'>sy5-1</a>", "<a class='dianji' href='#'>sy5-2</a>",
+				"<a class='dianji' href='#'>sy5-3</a>"
+			],
+			["<a class='dianji' href='#'>sy6-1</a>", "<a class='dianji' href='#'>sy6-2</a>",
+				"<a class='dianji' href='#'>sy6-3</a>"
+			],
+			["<a class='dianji' href='#'>sy7-1</a>", "<a class='dianji' href='#'>sy7-2</a>",
+				"<a class='dianji' href='#'>sy7-3</a>"
+			],
+			["<a class='dianji' href='#'>sy8-1</a>", "<a class='dianji' href='#'>sy8-2</a>",
+				"<a class='dianji' href='#'>sy8-3</a>"
+			]
+		]
+		$(function() {
+			$("#picList .box-T").click(function() {
+				let _this = this;
+				$(".title").text($(_this).text())
+				var box = "";
+				if (typeof arr[$(_this).index()] != 'undefined' && arr[$(_this).index()].length > 0) {
+					for (var i = 0; i < arr[$(_this).index()].length; i++) {
+						box += arr[$(_this).index()][i];
+					}
+				}
+
+				$(".childTitle").html(box)
+				$("#pan").fadeIn(800);
+				$("#show").fadeIn(800);
+
+			});
+			$("#pan").click(function() {
+				$(this).fadeOut(600);
+				$("#show").fadeOut(600);
+			});
+		});
+	</script>
 </html>
