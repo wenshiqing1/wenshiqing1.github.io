@@ -1,38 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
 
-<!DOCTYPE HTML>
-<html>
 <head>
-<meta charset="utf-8">
-<title>计算邮资</title>
-<script type="text/javascript">
-function show(){
-	let weight=document.getElementById('weight').value;
-	let postage=0;
-	if(weight<=20){
-		postage=80;
-	}else if(weight<=40){
-		postage=160;
-	}else if(weight<=60){
-		postage=240;
-	}else if(weight<=80){
-		postage=320;
-	}else if(weight<=100){
-		postage=400;
-	}else if(weight>100){
-		postage="超重";
-	}else{postage="重量必须是0-100之间的数！";}
-	document.getElementById('postage').value=postage+"分";
-}
-</script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>开关灯</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        button {
+            position: absolute;
+            top: 300px;
+            left: 50%;
+            margin-left: -22px;
+            background-color: rgb(138, 220, 252);
+            border-radius: 30%;
+        }
+        
+        img {
+            position: absolute;
+            left: 50%;
+            margin-left: -150px;
+            width: 300px;
+            height: 300px;
+        }
+    </style>
 </head>
 <body>
-<form action="">
-  <label>信函重量：</label>
-  <label for="weight"></label><input type="text" name="weight" id="weight">
-  <input type="button" value="计算!" onclick="show()" >
-  <br>
-  <label>应付邮资：</label>
-  <label for="postage"></label><input type="text" name="postage" id="postage" readonly>
-</form>
+    <button>开关</button>
+    <img src="Dark.png" alt="">
+    <script>
+        var btn = document.querySelector('button');
+        var img = document.querySelector('img');
+        var bool = false;
+        btn.onclick = function() {
+            if (!bool) {
+                img.src = 'light.png';
+                bool = !bool;
+            } else {
+                img.src = 'Dark.png';
+                bool = !bool;
+            }
+        }
+    </script>
 </body>
 </html>

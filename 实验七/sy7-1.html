@@ -1,47 +1,27 @@
 
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
 <head>
-    <title>Do you love me?</title>
-    <script type="text/javascript">
-        let flag;
-        flag=1;
-        function f1()
-        {
-            alert("I love you,too ")
-        }
-        function f()
-        {
-            let my_bn=document.getElementById("Bn");
-            if(flag===1)
-            {
-                my_bn.style.top = "90px";
-                my_bn.style.left = "500px";
-                flag=2;
-            }
-            else if(flag===2)
-            {
-                my_bn.style.top = "90px";
-                my_bn.style.left = "50px";
-                flag=3;
-            }
-            else if(flag===3)
-            {
-                my_bn.style.top = "235px";
-                my_bn.style.left = "360px";
-                flag=1;
-            }
-        }
-    </script>
+  <title>计算平均值</title>
+  <meta charset="utf-8">
+  <script type="text/javascript">
+function show(){
+	let v1=parseInt(document.getElementById('v1').value);
+	let v2=parseInt(document.getElementById('v2').value);
+	let v3=parseInt(document.getElementById('v3').value);
+	let aver=(v1+v2+v3)/3;
+	alert("平均值为："+aver);
+}
+</script>
 </head>
 <body>
-<h1 style="position:absolute; left:220px; top:175px; width:auto; height:210px;">Do you love me?</h1>
-<div id="By" style="position:absolute; left:285px; top:235px; width:210px;
-height:210px;">
-    <input type="button" value=" YES " onclick="f1()" />
-</div>
-<div id="Bn" style="position:absolute; left:360px; top:235px; width:210px; height:210px;">
-    <input type="button" value="  NO  " onmouseover="f()" />
-</div>
+  <form>
+  <label>输入三个整数：</label><br>
+  <label for="v1"></label><input type="number" name="v1" id="v1"><br>
+  <label for="v2"></label><input type="number" name="v2" id="v2"><br>
+  <label for="v3"></label><input type="number" name="v3" id="v3"><br>
+  <input type="button" value="计算平均值!" onclick="show()" >
+</form>
 </body>
 </html>
+
